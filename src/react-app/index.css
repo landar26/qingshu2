@@ -1,68 +1,83 @@
+/* 色值对齐 App 的 DesignSystem.swift：品牌蓝 #4F6DCF，纸张底色。 */
 :root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
+	--brand: #4f6dcf;
+	--brand-2: #dfe5f7;
+	--brand-ink: #3a55b0;
+	--bg: #f7f5f0;
+	--paper: #fffefb;
+	--ink: #23252b;
+	--muted: #6b6e78;
+	--faint: #9a9ca5;
+	--line: rgba(35, 37, 43, 0.08);
+	--shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset, 0 1px 2px rgba(30, 35, 60, 0.06), 0 8px 24px rgba(30, 35, 60, 0.06);
+	--radius: 16px;
 
-	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
-
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
+	color-scheme: light;
+	font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Helvetica Neue", Arial, sans-serif;
+	line-height: 1.6;
+	color: var(--ink);
+	background: var(--bg);
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 }
 
-a {
-	font-weight: 500;
-	color: #646cff;
-	text-decoration: inherit;
+@media (prefers-color-scheme: dark) {
+	:root {
+		--brand: #7b93e6;
+		--brand-2: #262d45;
+		--brand-ink: #a5b6f0;
+		--bg: #17181b;
+		--paper: #212226;
+		--ink: #ecebe7;
+		--muted: #a3a4aa;
+		--faint: #74767d;
+		--line: rgba(255, 255, 255, 0.08);
+		--shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 8px 24px rgba(0, 0, 0, 0.35);
+		color-scheme: dark;
+	}
 }
-a:hover {
-	color: #535bf2;
+
+* {
+	box-sizing: border-box;
 }
 
 body {
 	margin: 0;
+	min-height: 100vh;
+	background: var(--bg);
+}
+
+#root {
 	display: flex;
-	place-items: center;
-	min-width: 320px;
+	flex-direction: column;
 	min-height: 100vh;
 }
 
-h1 {
-	font-size: 3.2em;
-	line-height: 1.1;
+main {
+	flex: 1;
 }
 
-button {
-	border-radius: 8px;
-	border: 1px solid transparent;
-	padding: 0.6em 1.2em;
-	font-size: 1em;
-	font-weight: 500;
-	font-family: inherit;
-	background-color: #1a1a1a;
-	cursor: pointer;
-	transition: border-color 0.25s;
-}
-button:hover {
-	border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-	outline: 4px auto -webkit-focus-ring-color;
+a {
+	color: var(--brand);
+	text-decoration: none;
 }
 
-@media (prefers-color-scheme: light) {
-	:root {
-		color: #213547;
-		background-color: #ffffff;
-	}
-	a:hover {
-		color: #747bff;
-	}
-	button {
-		background-color: #f9f9f9;
-	}
+a:hover {
+	text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.25;
+	letter-spacing: -0.01em;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+img {
+	display: block;
 }

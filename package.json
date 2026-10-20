@@ -1,6 +1,6 @@
 {
 	"name": "qingshu2",
-	"description": "A template for building a React application with Vite, Hono, and Cloudflare Workers",
+	"description": "轻书笔记官网 (Qingshu Notes website)",
 	"cloudflare": {
 		"label": "Vite React Template",
 		"products": [
