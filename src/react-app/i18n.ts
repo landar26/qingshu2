@@ -109,7 +109,7 @@ export const strings: Record<Lang, Strings> = {
 				{ icon: "⌕", title: "全文搜索", body: "标题和正文都能搜，几千个块也能瞬间找到。" },
 				{ icon: "↑", title: "导出 Markdown", body: "单页或整个工作区一键导出为 Markdown，你的笔记永远不被锁住。" },
 				{ icon: "↺", title: "回收站", body: "删掉的页面先进回收站，30 天内随时恢复。" },
-				{ icon: "◐", title: "浅色与深色", body: "纸张质感的界面，自动跟随系统外观，夜里写字也不刺眼。" },
+				{ icon: "↶", title: "撤销与重做", body: "写错了随时撤销，改主意了再重做，放心大胆地改。" },
 			],
 		},
 		privacyBand: {
@@ -212,7 +212,7 @@ export const strings: Record<Lang, Strings> = {
 				{ icon: "⌕", title: "Full-text search", body: "Search titles and content alike — thousands of blocks, found instantly." },
 				{ icon: "↑", title: "Export to Markdown", body: "Export one page or your whole workspace as Markdown. Your notes are never locked in." },
 				{ icon: "↺", title: "Trash", body: "Deleted pages go to the trash first and can be restored within 30 days." },
-				{ icon: "◐", title: "Light and dark", body: "A paper-like interface that follows your system appearance, easy on the eyes at night." },
+				{ icon: "↶", title: "Undo and redo", body: "Undo any change and redo it if you change your mind, so you can edit fearlessly." },
 			],
 		},
 		privacyBand: {
